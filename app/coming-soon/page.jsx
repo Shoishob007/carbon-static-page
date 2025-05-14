@@ -43,7 +43,7 @@ export default function ComingSoon() {
       <CarbonBubbles />
 
       <div className="relative h-full flex items-center justify-center overflow-auto">
-        <div className="text-center max-w-xl bg-transparent backdrop-blur-md rounded-2xl">
+        <div className="text-center max-w-xl bg-transparent backdrop-blur-sm">
           <div className="logo mb-6">
             <FaLeaf className="text-5xl text-emerald-700 mx-auto" />
           </div>
@@ -64,7 +64,7 @@ export default function ComingSoon() {
           <form onSubmit={handleSubmit} className="max-w-md mx-auto mb-6">
             <div className="flex flex-col gap-4">
               <textarea
-                placeholder="Have questions or feedback? Write to us..."
+                placeholder="Have enquiry? Write to us..."
                 className="w-full px-4 py-3 bg-white/90 rounded-lg border border-gray-300 focus:outline-none focus:ring-0 text-gray-800 min-h-[120px]"
                 required
                 value={enquiry}

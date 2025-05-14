@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ref, get, set } from "firebase/database";
+import { ref, get } from "firebase/database";
 import database from "@/firebaseConfig";
 
 export default function Countdown() {
@@ -15,7 +15,7 @@ export default function Countdown() {
     seconds: 0,
   });
 
-  // Fetch the launch date from Firebase
+  // launch date from Firebase
   useEffect(() => {
     const fetchLaunchDate = async () => {
       try {
@@ -34,7 +34,7 @@ export default function Countdown() {
     fetchLaunchDate();
   }, []);
 
-  // Countdown logic
+  // countdown logic
   useEffect(() => {
     if (!launchDate) return;
 
@@ -64,7 +64,7 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, [launchDate]);
 
-  // Function to update the launch date in Firebase
+  // updating the launch date in Firebase
   // const updateLaunchDate = async (newDate) => {
   //   try {
   //     await set(ref(database, DB_KEY), newDate.toISOString());
