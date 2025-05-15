@@ -57,12 +57,12 @@ export default function ComingSoon() {
             </div>
           </div>
 
-          <p className="text-base sm:text-lg text-gray-700 mt-4">
+          <p className="text-base sm:text-lg text-gray-700 mt-6 mb-2">
             We are working one something impactful - a platform designed to help
             individuals and organizations calculate, reduce and offset their
             carbon footprint.
           </p>
-          <p className="text-base sm:text-lg text-gray-700 mb-6">
+          <p className="text-base sm:text-lg text-gray-700 mb-8">
             Whether you're taking your first steps in sustainability or
             deepening your climate journey, we're building the tools to support
             you.{" "}
@@ -74,7 +74,11 @@ export default function ComingSoon() {
 
           <Countdown />
 
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+          <p className="text-base sm:text-lg text-gray-700 mb-6">
+            Together, we can restore the balance amongst people, progress and the planet. 
+          </p>
+
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto mb-4">
             <div className="flex flex-col gap-4">
               <textarea
                 placeholder="Have enquiry? Write to us..."

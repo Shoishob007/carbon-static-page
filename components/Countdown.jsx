@@ -76,7 +76,7 @@ export default function Countdown() {
   // };
 
   return (
-    <div className="flex flex-col items-center my-4">
+    <div className="flex flex-col items-center mt-4 mb-8">
       {launchDate ? (
         <>
           <div className="flex justify-center gap-4">
