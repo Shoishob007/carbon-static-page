@@ -76,19 +76,19 @@ export default function Countdown() {
   // };
 
   return (
-    <div className="flex flex-col items-center mt-4 mb-8">
+    <div className="flex flex-col items-center mt-4 mb-8 sm:mt-6 sm:mb-10">
       {launchDate ? (
         <>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div
                 key={unit}
-                className="bg-gradient-to-b from-emerald-100 to-white p-4 rounded-lg min-w-20 shadow-sm flex flex-col items-center"
+                className="bg-gradient-to-b from-emerald-100 to-white p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg min-w-16 sm:min-w-20 shadow-sm flex flex-col items-center"
               >
-                <span className="block text-3xl font-bold text-emerald-700">
+                <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-700">
                   {String(Math.floor(value)).padStart(2, "0")}
                 </span>
-                <span className="text-xs uppercase text-gray-600">{unit}</span>
+                <span className="text-xs sm:text-sm lg:text-base uppercase text-gray-600">{unit}</span>
               </div>
             ))}
           </div>
