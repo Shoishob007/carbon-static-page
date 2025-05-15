@@ -15,7 +15,7 @@ export default function Countdown() {
     seconds: 0,
   });
 
-  // launch date from Firebase
+  // launching date from Firebase
   useEffect(() => {
     const fetchLaunchDate = async () => {
       try {
@@ -76,14 +76,14 @@ export default function Countdown() {
   // };
 
   return (
-    <div className="flex flex-col items-center my-8">
+    <div className="flex flex-col items-center my-4">
       {launchDate ? (
         <>
           <div className="flex justify-center gap-4">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div
                 key={unit}
-                className="bg-white/90 p-4 rounded-lg min-w-20 shadow-sm flex flex-col items-center"
+                className="bg-gradient-to-b from-emerald-100 to-white p-4 rounded-lg min-w-20 shadow-sm flex flex-col items-center"
               >
                 <span className="block text-3xl font-bold text-emerald-700">
                   {String(Math.floor(value)).padStart(2, "0")}
