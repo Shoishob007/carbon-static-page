@@ -4,11 +4,6 @@ import { useState } from "react";
 import { sendComingSoonEnquiry } from "@/app/actions/sendComingSoonEmail";
 import {
   FaLeaf,
-  FaSeedling,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaPlane,
   FaPaperPlane,
 } from "react-icons/fa";
 import CarbonBubbles from "@/components/CarbonBubbles";

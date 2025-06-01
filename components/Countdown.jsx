@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ref, get } from "firebase/database";
+import { ref, get, set } from "firebase/database";
 import database from "@/firebaseConfig";
 
 export default function Countdown() {
@@ -93,10 +93,10 @@ export default function Countdown() {
             ))}
           </div>
           {/* <button
-            onClick={() => updateLaunchDate(new Date("2025-06-31T00:00:00Z"))}
+            onClick={() => updateLaunchDate(new Date("2025-06-22T00:00:00Z"))}
             className="mt-4 px-4 py-2 bg-emerald-600 text-white rounded-lg shadow hover:bg-emerald-700"
           >
-            Update Launch Date to 2025-06-31
+            Update Launch Date to 2025-06-22
           </button> */}
         </>
       ) : (
