@@ -93,10 +93,10 @@ export default function Countdown() {
             ))}
           </div>
           {/* <button
-            onClick={() => updateLaunchDate(new Date("2025-06-22T00:00:00Z"))}
+            onClick={() => updateLaunchDate(new Date("2025-07-01T00:00:00Z"))}
             className="mt-4 px-4 py-2 bg-emerald-600 text-white rounded-lg shadow hover:bg-emerald-700"
           >
-            Update Launch Date to 2025-06-22
+            Update Launch Date to 2025-07-01
           </button> */}
         </>
       ) : (
